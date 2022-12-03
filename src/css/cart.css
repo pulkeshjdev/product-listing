@@ -1,0 +1,18 @@
+.Cart-item{
+    display: flex;
+    flex-direction: row;
+    height:auto;
+}
+
+.cart-item-thumbnail{
+    margin: 5px;
+}
+.cart-item-thumbnail img{
+    width:75px;
+    height:75px;
+    border: 1px solid rgb(162, 162, 162)
+}
+
+.cart-item-details{
+    margin: 5px;
+}

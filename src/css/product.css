@@ -1,0 +1,34 @@
+.Product-item{
+    display: flex;
+    flex-direction: row;
+    height:auto;;
+}
+
+.Item-thumbnail{
+    margin: 5px;
+}
+.Item-thumbnail img{
+    width:200px;
+    height:200px;
+    border: 1px solid rgb(162, 162, 162)
+}
+
+.Item-details{
+    margin: 5px;
+}
+
+.price{
+    display:flex;
+    flex-direction: row;
+}
+.original-price{
+    text-decoration: line-through;
+}
+.discount{
+    font-size: smaller;
+}
+
+.description{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

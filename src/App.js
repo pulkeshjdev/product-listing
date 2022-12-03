@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import '../src/css/App.css';
+import ProductList from './components/productList';
+import Sidenav from './components/sidenav';
 
-function App() {
+export default function App() {
+
+  let [categories, setCategories] = useState([]);
+  let [brands, setBrands] = useState([]);
+  let [filter, setFilter] = useState({ "category": [], "brand": [], "sort": "" });
+
+  const updateFilter = (uniqueCategory, uniqueBrand) => {
+    setCategories(uniqueCategory);
+    setBrands(uniqueBrand);
+  }
+
+  const updateFilters = (category, brand, sort = "") => {
+    setFilter({ category: [...category], brand: [...brand], sort: sort });
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main>
+      <Sidenav
+        className="sidenav"
+        categories={categories}
+        brands={brands}
+        updateFilters={updateFilters}
+      />
+      <ProductList
+        updateFilter={updateFilter}
+        filter={filter}
+      />
+    </main>
+  )
 }
-
-export default App;
