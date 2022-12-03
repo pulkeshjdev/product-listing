@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/%7Brepo-name%7D/static/css/main.77410b0a.css",
-    "main.js": "/%7Brepo-name%7D/static/js/main.b30d00f1.js",
-    "index.html": "/%7Brepo-name%7D/index.html",
-    "main.77410b0a.css.map": "/%7Brepo-name%7D/static/css/main.77410b0a.css.map",
-    "main.b30d00f1.js.map": "/%7Brepo-name%7D/static/js/main.b30d00f1.js.map"
+    "main.css": "/product-listing/static/css/main.77410b0a.css",
+    "main.js": "/product-listing/static/js/main.b30d00f1.js",
+    "index.html": "/product-listing/index.html",
+    "main.77410b0a.css.map": "/product-listing/static/css/main.77410b0a.css.map",
+    "main.b30d00f1.js.map": "/product-listing/static/js/main.b30d00f1.js.map"
   },
   "entrypoints": [
     "static/css/main.77410b0a.css",
